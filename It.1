@@ -1,0 +1,21 @@
+String my_name;
+int a=0;
+int b=1;
+void setup() {
+    Serial.begin(9600);
+    pinMode(a,INPUT);
+    pinMode(b,INPUT);
+    delay(2000);
+ 
+    
+}
+ 
+ 
+ 
+void loop() {
+  //  if(Serial.available()){
+      //Serial.println(digitalRead(testpin));
+ //   }
+      if((digitalRead(a)==1) && (digitalRead(b)==1)) Serial.print("1  ");
+      Serial.println(" ");
+}
